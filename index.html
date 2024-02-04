@@ -7,22 +7,16 @@
     <title>家谱展示</title>
 </head>
 <body>
-    <div class="family-tree">
-        <!-- 在这里添加家谱树的内容 -->
-        <ul>
-            <li>
-                <span>祖先姓名</span>
-                <ul>
-                    <li><span>父亲姓名</span></li>
-                    <li><span>母亲姓名</span>
-                        <ul>
-                            <li><span>你的姓名</span></li>
-                            <!-- 在这里可以继续添加后代的节点 -->
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <div class="family-tree" id="familyTree">
+        <!-- 家谱树的内容将通过JavaScript动态生成 -->
     </div>
+
+    <div>
+        <!-- 文本框和按钮用于实时添加节点 -->
+        <input type="text" id="nodeName" placeholder="输入节点名称">
+        <button onclick="addNode()">添加节点</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
