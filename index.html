@@ -15,6 +15,13 @@
         <!-- 文本框和按钮用于实时添加节点 -->
         <input type="text" id="nodeName" placeholder="输入节点名称">
         <button onclick="addNode()">添加节点</button>
+
+        <!-- 下拉菜单用于选择父节点 -->
+        <select id="parentSelect">
+            <option value="rootNode">祖先姓名</option>
+        </select>
+        <input type="text" id="childName" placeholder="输入子节点名称">
+        <button onclick="addChildNode()">添加子节点</button>
     </div>
 
     <script src="script.js"></script>
